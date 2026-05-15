@@ -8,13 +8,13 @@ require("dotenv").config({
 });
 
 const mongoose = require("mongoose");
-mongoose.connect(process.env.MONGO_CONNECTION_STRING);
+mongoose.connect(process.env.MONGO_CONNECTION_STRING, { dbName: "CMSC335DB" });
 const reviewSchema = new mongoose.Schema({
     playerName: String,
     rating: String,
     reviewMessage: String
 });
-const Review = mongoose.model("Review", reviewSchema);
+const Review = mongoose.model("Review", reviewSchema, "playerReviews");
 
 const playerCache = {};
 const playerDataCache = {};
