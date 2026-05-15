@@ -6,7 +6,7 @@ App Description: This website is a way for users to look up basic information re
 
 YouTube Video Link: [https://www.youtube.com/watch?v=CRIFKFoFado](https://www.youtube.com/watch?v=CRIFKFoFado)
 
-APIs: [BallDontLie](https://app.balldontlie.io/)
+APIs: APIs: BallDontLie (https://www.balldontlie.io/)
 
 Contact Email: ckurniaw@terpmail.umd.edu
 
