@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Info</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Player Information</h1>
+
+    <strong>Name: </strong><%- player.first_name %> <%- player.last_name %>
+    <br>
+    <strong>Position: </strong><%- player.position %>
+    <br>
+    <strong>Jersey Number: </strong>#<%- player.jersey_number %>
+    <br>
+    <strong>Height: </strong><%- player.height %>
+    <br>
+    <strong>Weight: </strong><%- player.weight %> lbs
+    <br>
+    <strong>College: </strong><%- player.college %>
+    <br>
+    <strong>Country: </strong><%- player.country %>
+    <br>
+    <hr>
+
+    <h2>Team</h2>
+    <strong>Team: </strong><%- player.team.full_name %> (<%- player.team.abbreviation %>)
+    <br>
+    <strong>Conference: </strong><%- player.team.conference %>
+    <br>
+    <strong>Division: </strong><%- player.team.division %>
+    <br>
+    <hr>
+
+    <h2>Community Rating</h2>
+    <% if (reviews.length > 0) { %>
+        <strong>Average Rating: </strong><%- avgRating %>/10
+        <br>
+        <strong>Total Reviews: </strong><%- reviews.length %>
+    <% } else { %>
+        <p>No community reviews yet.</p>
+    <% } %>
+    <hr>
+
+    <h2>Community Reviews</h2>
+    <% if (reviews.length > 0) { %>
+        <% reviews.forEach(function(review) { %>
+            <strong>Rating: </strong><%- review.rating %>/10
+            <br>
+            <%- review.reviewMessage %>
+            <br><br>
+        <% }); %>
+    <% } else { %>
+        <p>Be the first to leave a review!</p>
+    <% } %>
+    <hr>
+
+    <a href="/">HOME</a>
+</body>
+</html>

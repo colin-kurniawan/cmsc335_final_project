@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Player Review Submitted</h1>
+
+    <strong>Player Name: </strong><%- playerName %>
+    <br>
+    <strong>Rating: </strong><%- rating %>/10
+    <br>
+    <strong>Review Message: </strong>
+    <br>
+    <%- reviewMessage %>
+    <br>
+    <hr>
+    <a href="/">Home</a>
+    <a href="/reviewPlayer">Write Another Review</a>
+</body>
+
+</html>

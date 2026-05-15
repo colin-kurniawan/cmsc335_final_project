@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>NBA Player Ratings</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="/">Home</a>
+            <a href="/reviewPlayer">Rate An NBA Player</a>
+        </div>
+    </nav>
+
+	<h1>Welcome to Rate An NBA Player</h1>
+    <p>Search for any NBA player to see their stats and community reviews.</p>
+    
+    <form action="/search" method="GET">
+        <input type="text" name="player" id="player" placeholder="Search for a player" required>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

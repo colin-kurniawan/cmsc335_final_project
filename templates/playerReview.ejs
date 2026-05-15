@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Review</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Submit a Player Review</h1>
+
+    <form action="/submitReview" method="POST">
+
+        <label for="playerName">Player Name:</label>
+        <input type="text" id="playerName" name="playerName" placeholder="Enter player name" required />
+        <br/><br/>
+
+        <label for="rating">Rating (1-10):</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" placeholder="1-10" required />
+        <br/><br/>
+
+        <label for="reviewMessage">Review Message:</label>
+        <br/>
+        <textarea id="reviewMessage" name="reviewMessage" placeholder="Write your review here..." required></textarea>
+        <br/><br/>
+
+        <button type="submit">Submit Review</button>
+
+        <hr>
+        <a href="/">Home</a>
+    </form>
+</body>
+</html>
